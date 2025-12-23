@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+
+  <body>
+    <form action="" name="contacto" id="contacto" method="">
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre" placeholder="Jojo S." maxlength="10" />
+        <br />
+
+        <textarea name="mensaje" id="mensaje" placeholder="mensaje"></textarea>
+        <br />
+
+        <label>Pais</label>
+        <select name="pais" id="pais">
+            <option value="mexico">Mexico</option>
+            <option value="argentina">Argentina</option>
+            <option value="brazil">Brazil</option>
+        </select>
+        <br />
+        <br />
+
+        <input type="radio" id="english" value="english" name="idioma" /><label
+            for="english"
+            >English</label
+        >
+        <input type="radio" id="spanish" value="spanish" name="idioma" /><label
+            for="spanish"
+            >Spanish</label
+        >
+        <br />
+        <br />
+
+        <input type="checkbox" id="terminos" name="terminos" /><label
+            for="terminos"
+            >Aceptar terminos y condiciones</label
+        >
+        <br />
+        <br />
+        <input type="button" value="Enviar datos" />
+    </form>
+  </body>
+</html>
