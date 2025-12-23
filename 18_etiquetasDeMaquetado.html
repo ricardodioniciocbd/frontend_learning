@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas de Maquetado</title>
+</head>
+<body>
+    <!-- EJEMPLO SIN SEMANTICA-->
+    <div class="header">
+        <div class="nav">
+            <a href="#">Menu 1</a>
+            <a href="#">Menu 2</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="articulo">
+            <h1 class="titulo">Este es el articulo de mi Post</h1>
+            <p class="fecha">07 de Septiembre de 1975</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, illo?</p>
+            <img src="./imagenes/paisaje2.jpg" width="400px">
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <p>Texto del sidebar</p>
+    </div>
+
+    <div class="footer">
+        <p>Texto del footer</p>
+    </div>
+
+    <!-- Elementos semanticos
+     - section - Define una seccion de un documento que pude contener un grupo de contenido 
+     - article - Define el contenido de un sitio, por ejemplo un articulo
+     - header - Define cual sera el encabezado de un sitio (navegacion, logo, enlaces, etc)
+     - main - Define la seccion principal de un sitio 
+     - aside - Nos permite definir un area con contenido independiente al principal, como el sidebar
+     - figcaption - Representa la leyenda o pie de imagen.
+     - figure - Representa el contenido dentro de la etiqueta <figcaption>
+     - mark - Define texto que deberia ser el resultado por el navegador web
+     - nav - Define un conjunto de enlaces de navegacion.
+     - summary - Define el encabezado para la etiquta <details>
+     - details - Define los detalles adicionales de la etiqueta summary
+     - time - Representa un tiempo en formato de computadora.
+     - code - Define codigo 
+     - kbd - Represetna teclas a presionar.
+     
+     -->
+
+    <!-- EJEMPLO CON SEMANTICA-->
+    <header class="header">
+        <nav class="nav">
+            <a href="#">Menu 1</a>
+            <a href="#">Menu 2</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <article class="articulo">
+            <h1 class="titulo">Este es el articulo de mi Post</h1>
+            <time datetime="1975-09-07">07 de Septiembre de 1975</time>
+            <p>Lorem ipsum dolor sit amet <mark>consectetur adipisicing elit.</marr> Excepturi, illo?</p>
+            <figure>
+                <img src="./imagenes/paisaje2.jpg" width="400px">
+                Montania Nevada
+            </figure>
+        </article>
+    </main>
+    
+    <section>
+        <h4>Informacion Adicional</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </section>
+
+    <aside class="sidebar">
+        <p>Texto del sidebar</p>
+    </aside>
+
+    <footer class="footer">
+        <p>Texto del footer</p>
+    </footer>
+    
+</body>
+</html>
