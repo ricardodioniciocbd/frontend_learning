@@ -1,0 +1,25 @@
+/*Ejemplo con anidado*/
+
+.contenedor {
+  .articulo {
+    background: lightgray;
+
+    &.destacado {
+      background: lightblue;
+      h2{
+        color: blueviolet;
+      }
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 20px;
+    }
+    a {
+      font-size: 20;
+      color: red;
+    }
+  }
+}

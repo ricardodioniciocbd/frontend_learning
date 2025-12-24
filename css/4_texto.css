@@ -1,0 +1,31 @@
+body{
+    font-family: sans-serif;
+}
+
+h1{
+    font-family: 'Times New Roman', Arial, serif;
+
+    font-style: italic;
+    /* normal, bold*/
+
+    font-weight: normal;
+    /* normal, bold*/
+
+    text-align: center;
+    /* left, right, center, justify */
+
+    text-decoration: underline;
+
+}
+
+p{
+    text-transform: lowercase;
+    /* uppercase, lowercase, capitalize */
+
+    
+    /* letter-spacing: 2px;
+    espacio entre letras */
+
+    line-height: 1.5;
+    /* espacio entre lineas */
+}
