@@ -1,0 +1,21 @@
+.menu{
+    background-color: azure;
+    overflow: hidden;
+
+}
+
+.menu a{
+    color: red;
+}
+
+/* Selector de hijos*/
+.menu > a{
+    font-size: 24px;
+}
+
+/* Selector de hermanos 
+toma unicamente el primer elemento que sigue al elemento especificado/
+h3 + p{
+    color: blue;
+}
+*/
