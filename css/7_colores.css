@@ -1,0 +1,20 @@
+.color{
+
+    /*valor hexadecimal*/
+    /*3 digitos*/
+    /*color: 000;*/
+
+    /*6 digitos*/
+    /*color: #926c1b;*/
+
+    /*8 digitos (transparencia)*/
+    color: #21b635a2;
+    /**/
+
+    /*VALORES RGB*/
+    /*Red, green, blue*/ 
+    color: rgb(red, green, blue);
+
+    /*Transparencia rgb*/
+    color: rgba(0,0,0 0.5);
+}
