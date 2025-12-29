@@ -1,0 +1,46 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    font-size: 50px;
+    &:hover{ /*pseudo clase para pasar el cursor y cambiar el color*/
+        background: red;
+        color: white;
+    }
+    &:active{ /*pseduo clase que se ejecuta al dar clic sobre el enlace*/
+        background: black;
+    }
+    &:visited{
+        color: #858585;
+    }
+}
+
+.articulos{
+    p:hover{
+        background: #414141;
+        color: white;
+    }
+}
+
+.cajas{
+    div{
+        background: lightcyan;
+        margin: 10px;
+        height: 50px;
+
+        &:first-child{
+            background: lightskyblue;
+        }
+        &:nth-child(2){
+            background: lightblue;
+        }
+        &:last-child{
+            background: lightgreen;
+        }
+        &:nth-last-child(2){
+            background: pink;
+        }
+    }
+    
+}

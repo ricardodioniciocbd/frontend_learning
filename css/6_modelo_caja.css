@@ -1,0 +1,20 @@
+.caja{
+    background: lightgreen;
+    width: 300px;
+    /*
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 30px;
+    */
+    padding: 100px; /* Margen interno / Es el espacio interior*/
+    margin: 70px;  /* Margen externo / Es el espacio exterior*/
+    border: 10px solid black;
+}
+
+.imagen{
+    width: 400px;
+    padding: 10px;
+    margin: 70px;
+    border: solid black;
+}

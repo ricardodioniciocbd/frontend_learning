@@ -1,0 +1,65 @@
+/*El psudo elemento nos va a permitir acceder al primer elemento del parrafo en este caso
+NOS VA A PERMITIR DALE ESTILOS CSS A CIERTOS ELEMENTOS DE NUESTRO CODIGO */
+
+
+/* FORMA MODERNA DE USAR PSUDO ELEMNTO */
+p {
+    &::first-letter {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    &::first-line {
+        background: #c9a9cf;
+        font-size: 18px;
+        line-height: 50px;
+    }
+}
+
+* {
+    &::selection {
+        background: red;
+        color: white;
+    }
+}
+
+.caja {
+    background: #f9a03f;
+    width: 150px;
+    height: 150px;
+
+    &::before {
+        content: 'Contenido ANTES de la caja';
+        display: block;
+        /* Propiedad que nos permite darle estilos al contenido antes de la caja*/
+        background: black;
+        color: white;
+
+    }
+
+    &::after {
+        content: 'Contenido DESPUES de la caja';
+        display: block;
+        /* Propiedad que nos permite darle estilos al contenido despues de la caja*/
+        background: black;
+        color: white;
+    }
+}
+
+.lista {
+    li {
+        &::marker {
+            content: " * ";
+            font-size: 22px;
+            color: red;
+        }
+    }
+
+}
+
+input{
+    &::placeholder{
+        color: blue;
+        font-weight: bold;
+    }
+}
