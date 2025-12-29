@@ -1,0 +1,41 @@
+/*
+    UNIDADES RELATIVAS:
+    - px - pixel
+    - % - porcentaje 
+    - vw/vh / Relativos al 1% del tamanio del viewport
+    - em - Relativa al tamanio de fuente que tenga se elemtno padre o el mas cercano
+    - rem - Relativa al tamanio de fuente especificado en la etiqueta HTML 
+
+    UNIDADES ABSOLUTAS ( no se usan en el disenio web):
+    - in - inches (pulgadas)
+    - cm - centimentos
+    - mm - milimitros 
+*/
+
+
+*{
+    margin: 0;
+}
+
+html{
+    font-size: 10px; /* tamaño de letra por defecto del navegador */
+}
+
+.caja{
+    background: rgba(68, 142, 166, 1);
+    width: 50vw;
+    height: 50vh;
+    font-size: 40px;
+
+    .parrafo-uno{
+        background: lightblue;
+        width: 50%;
+        height: 70%;
+        font-size: 2em; /* HACE REFERENCIA A LA MULTIPLICACION DEL FONTSIZE PADRE (caja 40px) Multiplicando 2 * 40 */
+
+    }
+}
+
+.parrafo-dos{
+    font-size: 2rem; /* SIEMPRE HACE REFERENCIA AL FONTSIZE DEL NAVEGADOR POR DEFAULT (html) MULTIPLICANDO 2 * 20 */
+}

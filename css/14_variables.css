@@ -1,0 +1,31 @@
+/*Para declarar una variable en CSS se usa el signo de dos puntos seguido del nombre de la variable y su valor*/
+
+:root{
+    /* Dentro de root, podemos definir muestras variables*/
+    --color-primario: orangered;
+    --color-secundario: #333333;
+    --fuente-primaria: 'Arial', sans-serif;
+    --fuente-secundaria: 'Courier New', monospace;
+    --pading: 10px;
+    --margin: 20px;
+}
+
+body{
+    font-family: var(--fuente-primaria);
+
+}
+
+h1{
+    color: var(--color-primario);
+    font-family: var(--fuente-secundaria);
+}
+
+header nav a{
+    color: var(--color-primario);
+    font-family: var(--fuente-primaria);
+}
+
+main a{
+    color: var(--color-primario);
+    font-family: var(--fuente-primaria);
+}

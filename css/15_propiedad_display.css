@@ -1,0 +1,46 @@
+.caja{
+    font-size: 20px;
+    background: #65a665;
+}
+
+.inline{
+    display: inline;
+    /* Notas:
+        - Los elementos inline no pueden llevar ancho y padding
+        - los elementos inline automaticamente se ponen uno al lado de otro 
+    
+    */
+}
+
+.block{
+    display:block;
+    padding:30px;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    /* Notas:
+        - Los elementos block ocupan todo el ancho disponible
+        - Los elementos block siempre empiezan en una nueva línea
+        - Los elementos block pueden tener ancho y padding
+    
+    */
+
+}
+
+.inline-block{
+    display: inline-block;
+    padding:20px;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    vertical-align: top;
+    /* Notas:
+        - Los elementos inline-block ocupan todo el ancho disponible
+        - Los elementos inline-block pueden llevar ancho y padding
+        - Los elementos inline-block se ponen uno al lado de otro
+    */
+}
+
+.none{ /*Sirve para ocultar elementos de nuestro sitio*/
+    display: none;
+}
