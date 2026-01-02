@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: #f2f2f2;
+}
+
+.caja{
+    width: 150px;
+    height: 100px;
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 40px;
+    margin: 20px;
+    padding: 40px;
+    text-align: center;
+
+}
+
+/* Tipos de Posicionamientos
+    - position: static (por defecto)
+
+    - position: relative (Nos va a permitir mover el elemento respecto a su posición original y el resto de elementos van a respetar su posición original)
+
+    - position: absolute (Nos va a permitir posicionar el elemento, pero lo que va a suceder es que el resto de los elementos no van a respetar su posición original, es decir, se va a sacar del flujo del documento)
+
+    - position: fixed (Nos va a permitir posicionar el elemento respecto a la ventana del navegador, es decir, aunque hagamos scroll el elemento va a permanecer en la misma posición)
+
+    - position: sticky (Nos va a permitir posicionar el elemento de forma relativa hasta que se alcance un umbral definido, momento en el cual se comportará como un elemento fijo)
+
+
+*/
+
+
+.posicionada-relative{
+    background: #57af46;
+    position: relative;
+    top: 30px;
+    left: 250px;
+}
+
+.posicionada-absolute{
+    background: #e91e63;
+    position: absolute;
+    top: 0px;
+    left: 500px;
+}
+
+.posicionada-fixed{
+    background: #2196f3;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.posicionada-sticky{
+    background: lightseagreen;
+    position: sticky;
+    top: 400px;
+    left: 250px;
+    
+}

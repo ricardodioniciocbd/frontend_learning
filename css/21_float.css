@@ -1,0 +1,19 @@
+body{
+    background: #f2f2f2;
+  
+}
+
+.contenedor{
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+}
+
+/*que es el float: left
+- Es la propiedad de css que nos va a permitir mandar la imagen a la parte izquierda y */
+
+.imagen{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
