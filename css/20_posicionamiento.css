@@ -20,7 +20,7 @@ body{
 
 }
 
-/* Tipos de Posicionamientos
+/* TIPOS DE POSICIONAMIENTO EN CSS:
     - position: static (por defecto)
 
     - position: relative (Nos va a permitir mover el elemento respecto a su posición original y el resto de elementos van a respetar su posición original)
@@ -30,7 +30,6 @@ body{
     - position: fixed (Nos va a permitir posicionar el elemento respecto a la ventana del navegador, es decir, aunque hagamos scroll el elemento va a permanecer en la misma posición)
 
     - position: sticky (Nos va a permitir posicionar el elemento de forma relativa hasta que se alcance un umbral definido, momento en el cual se comportará como un elemento fijo)
-
 
 */
 

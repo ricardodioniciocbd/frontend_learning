@@ -13,7 +13,7 @@ body{
     /* OVERFLOW: 
         - visible(por defecto, muestra el tal cual el contenido desbordado del div)
         - auto(muestra barras de desplazamiento si el contenido desborda el div)
-        - hidden(oculta el contenido que desborda el div)
+        - hidden(oculta el contenido que desborda el div);
         - scroll()
         */
     overflow: auto;
