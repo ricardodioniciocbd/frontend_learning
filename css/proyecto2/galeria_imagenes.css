@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: #101010;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+.contenedor{
+    width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+    h1{
+        margin-bottom: 40px;
+    }
+}
+
+.galeria{
+    a{
+        color: #f2f2f2;
+        text-decoration: none
+    }
+    figure{
+        width: 300px;
+        display: inline-block;
+        margin: 10px;
+
+        img{
+            width: 100%;
+            vertical-align: top;
+            border-radius: 5px;
+            filter: grayscale(100%);
+            transition: 0.3s ease all;
+            padding: 5px;
+            border: 1px solid transparent;
+
+        }
+        &:hover img{
+                filter: grayscale(0%);
+                border: 1px solid #fff;
+            }
+        figcaption{
+            margin-top: 10px;
+            color: #424242;
+            transition: 0.3s ease all;
+        }
+        &:hover figcaption{
+            color: #f2f2f2;
+        }
+    }
+
+}
