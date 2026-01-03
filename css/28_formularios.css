@@ -1,0 +1,42 @@
+.input {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #c2c2c2;
+  border-radius: 5px;
+
+  &::placeholder {
+    color: blue;
+    opacity: 0.5;
+  }
+  &:hover {
+    border: 2px solid #7e7eff;
+  }
+  &:focus {
+    /* Estado focus: es cuando le damos un clic*/
+    outline: 3px solid #4545ff; /*Outline: es un borde exterior, que nos ayuda a no desplazar los elementos o agregar ese desplazamineto de componentes*/
+    border: 2px solid transparent;
+  }
+  &:disabled {
+    background: #e7e7e7;
+  }
+  &:invalid {
+    outline: 2px solid red;
+    border: 2px solid transparent;
+  }
+  &:read-only {
+    background: #e7e7e7;
+    border: none;
+  }
+}
+
+button {
+  display: inline-block;
+  padding: 10px;
+  &[type="submit"] {
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

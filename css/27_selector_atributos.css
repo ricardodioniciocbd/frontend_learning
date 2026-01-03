@@ -1,0 +1,16 @@
+/*SELECTOR DE ATRIBUTOS
+- Permite trabajar mediante el atributo y permite darle estilos, encerrandolo mediante brakets [] */
+
+[data-id]{
+    color: blue;
+    font-size: 20px;
+}
+
+[data-id="2"]{
+    font-weight: bold;
+}
+
+input[type="email"]{
+    outline: 2px solid red;
+
+}
