@@ -1,0 +1,32 @@
+body{
+    background: #61101081;
+}
+
+.caja{
+    width: 400px;
+    margin: 100px auto;
+    background: #61101081;
+    transition: all ease .5s;
+
+    img{
+        width: 100%;
+        vertical-align: top;
+        border-radius: 15px;
+        
+        /*transform: translate(200px, 200px);*/
+        /*transform: scale(-.5);*/
+        /*transform: rotate(90deg);*/
+
+
+
+    }
+}
+
+
+.checkbox:checked + .caja{
+    transform: rotate(90deg) scale(1.5);
+}
+
+input, label{
+    font-size: 40px;
+}
