@@ -1,0 +1,59 @@
+.caja{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    background: #43ae75;
+
+    /* Para poder usar el keyframe, usamos esta propidad: */
+    animation-name: cambiarAncho;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+
+    /*
+    animation-iteration-count: infinite;
+    animation-direction: alternate;*/
+
+    /*Direccion de la animacion
+      Suele ser util cuando usamos cuenta infinita
+        - normal - hacia adelante(default)
+        - reverse - empieza por atras
+        - alternate - Primero hacia delante y luego en reversa.
+        - alternate-reverse - Primero en reversa y luego hacia adelante
+    */
+
+
+    /*Mantiene el ultimo mamaño con el que llega la animacion */
+    animation-fill-mode: forwards;
+
+    &:hover{
+        /* animation: nombre duracion funcion-tiempo dalay repeticiones direccion */
+        animation: agitar 0.3s ease 0s infinite forwards;
+    }
+
+}
+
+/* Sintaxis para poder crar animaciones, 'eframes'*/
+@keyframes cambiarAncho{
+    from{
+        width: 200px;
+    }
+
+    to {
+        width: 400px;
+    }
+}
+
+@keyframes agitar{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+
+    
+}
