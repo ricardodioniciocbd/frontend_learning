@@ -14,7 +14,7 @@ html, body{
 
 body{
     font-family: "Roboto", sans-serif;
-    background-image: url(../img/kai.jpg);
+    background-image: url(../img/kai.webp   );
     background-size: cover;
     background-position: top;
     position: relative;
@@ -29,7 +29,9 @@ body{
         position: fixed;
         top: 0;
         left: 0;
-        backdrop-filter: blur(50px);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        will-change: backdrop-filter;
         z-index: -1;
     }
 }
