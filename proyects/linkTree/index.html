@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="preload" as="image" href="./img/kai.webp">
     <link rel="stylesheet" href="./css/styles.css">
     <title>linkTree/Ricardocbd </title>
 </head>
@@ -15,7 +16,7 @@
 <body>
     <main class="contenedor">
         <section class="bio">
-            <img src="./img/nagii.jpg" alt="Foto de Ricardo Dionicio" class="foto">
+            <img src="./img/nagii.jpg" alt="Foto de Ricardo Dionicio" class="foto" loading="eager" fetchpriority="high">
             <h1 class="nombre">Ricardo Dionicio</h1>
             <p class="descripcion">Computer Systems Engineering Student</p>
         </section>
