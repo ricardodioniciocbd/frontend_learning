@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-image: url(../img/kai.jpg);
+    background-size: cover;
+    background-position: top;
+
+    /*Fondo blur*/
+    &::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        backdrop-filter: blur(50px);
+        z-index: -1;
+    }
+}
+
+.contenedor{
+    /*background: #ccc;*/
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    padding: 40px 0;
+    text-align: center;
+
+    .bio{
+
+        text-align: center;
+        margin-bottom: 40px;
+        .foto{
+            width: 150px;
+            height: auto;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 100px;
+            margin-bottom: 20px;
+        }
+
+        .nombre{
+            margin-bottom: 5px;
+            font-size: 32px;
+        }
+
+        .descripcion{
+            font-size: 18px;
+        }
+    }
+
+    .links{
+        .link{
+            color: #000;
+            border: 3px solid #000;
+            border-radius: 10px;
+            display: block;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            transition: 0.2s ease all;
+            box-shadow:
+            1px 1px 0 0 black,
+            2px 2px 0 0 black,
+            3px 3px 0 0 black,
+            4px 4px 0 0 black,
+            5px 5px 0 0 black;
+            transform: translate(-5px, -5px);
+
+            &:hover{
+                color:#fff;
+                box-shadow:0px 0px 0px 0px black;
+                transform: translate(0px, 0px);
+            }
+
+            &.sitio-web:hover{
+                background: #0066CC;
+                color: #fff;
+            }
+
+            &.github:hover{
+                background: #24292e;
+                color: #fff;
+            }
+
+            &.instagram:hover{
+                background: #E4405F;
+                color: #fff;
+            }
+
+            &.facebook:hover{
+                background: #1877F2;
+                color: #fff;
+            }
+
+            &.youtube:hover{
+                background: #FF0000;
+                color: #fff;
+            }
+            
+        }
+        
+    }
+}
+
