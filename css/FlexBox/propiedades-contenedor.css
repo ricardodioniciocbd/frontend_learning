@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+}
+
+.caja{
+    background: #1062ff;
+    color: #fff;
+    padding: 40px;
+    font-size: 24px;
+    border-radius: 5px;
+    
+
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    border: 2px solid #000;
+    margin: 40px auto;
+    padding: 40px;
+
+    /*Para trabajar con Flexbox, debemos centrarnos en el contenedor*/
+    display: flex;
+    gap: 40px; /*Espaciado entre las cajas*/
+    
+   
+    /*flex-direction: row; Acomoda las cajas en una sola linea*/
+    /*flex-wrap: wrap; Permite que las cajas se envuelvan en la siguiente linea*/
+
+
+     
+    /* flex-flow: row wrap;*/
+    flex-wrap: wrap;
+    justify-content: center; /*Centra las cajas horizontalmente*/
+
+    
+}
