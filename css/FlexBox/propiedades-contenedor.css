@@ -32,13 +32,54 @@ body{
     
    
     /*flex-direction: row; Acomoda las cajas en una sola linea*/
+    /*flex-direction: column; Acomoda las cajas en una sola columna*/
+
     /*flex-wrap: wrap; Permite que las cajas se envuelvan en la siguiente linea*/
-
-
-     
     /* flex-flow: row wrap;*/
+
+
+
+    /*
+        justify-content
+        Nos permite establecer el alineado de los elementos y distribuir el espaciado sobrante
+
+        Valores: center | flex-start | flex-end | space-between | space-around | space-evenly
+
+    flex-direction: column;
+    height: 90vh;
+    justify-content: space-around;
+    
+    */
+    height: 90vh;
+   
+
+    /*
+        align-items
+        Nos va a permitir cambiar el alineado de todos los elementos dentro del contenedor
+
+        Valores: strech | start | center | end |
+
+    justify-content: end;
+    align-items: end;
+
+      flex-direction: column;
+    align-items: center;
+    */
+
+
+    /*
+        aling-content
+        Nos va a permitir cambiar el alineado de los elementos dentro del contenedor cuando hay mas de una linea, por ejemplo cuando tengamos felx wrap
+    */
+    
+    align-content: start;
     flex-wrap: wrap;
-    justify-content: center; /*Centra las cajas horizontalmente*/
+
+  
+    
+    
+
+
 
     
 }
