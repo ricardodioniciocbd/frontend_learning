@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f2f2f2;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700px;
+}
+
+.grid {
+    min-height: 80vh;
+    margin: 60px;
+
+
+    /* .header{
+        background: #000;
+        color:#fff;
+    } */
+
+    /* PODEMOS ACCEDER A TODOS LOS ELEMENTOS DEL DENTRO DE .grid DE LA SIG. MANERA:  */
+    &>* {
+        background: #222121;
+        color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+    }
+}
+
+
+/* ESTRUCTURA DE LA GRID - PRIMERA FORMA */
+
+/* .grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(150px, auto) 1fr auto; 
+
+    .header {
+        grid-column: 1/ -1;
+    }
+
+    .main {
+        grid-column: 1 / span 2;
+        
+    }
+
+    .aside {
+       
+    }
+
+    .footer {
+        grid-column: 1 / -1;
+    }
+
+} */
+
+
+
+
+/* ESTRUCTURA DE LA GRID - SEGUNDA FORMA */
+.grid{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(150px, auto) 1fr auto;
+    grid-template-areas: 
+        'header  header  header'
+        'main    main    aside'
+        'footer  footer  footer';
+
+        .header{
+            grid-area: header;
+        }
+
+        .main{
+            grid-area: main;
+        }
+
+        .aside{
+            grid-area: aside;
+        }
+        .footer{
+            grid-area: footer ;
+        }
+
+
+}

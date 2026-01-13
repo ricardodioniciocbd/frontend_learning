@@ -1,0 +1,16 @@
+.grid{
+
+    display: grid;
+    padding: 30px;
+    gap: 30px;
+    height: 90vh;
+                    /* TAMAÑO DE COLUMNA Y FILA - USANDO MINMAX() */
+
+    /*Primer Columna que tiene un valor min y max, el valor MAX ES DE 1fr, lo que quiere decir que toma todo el espacio sobrante del contedor*/
+    grid-template-columns: minmax(200px, 1fr) 100px 100px;
+    
+    /* Que la primer fila, tenga un tamaño de 200px, y que la sigunda, tenga un tamaño minimo de 200px y tnega un maximo de 500px */
+    grid-template-rows: 200px minmax(200px, 500px) ;
+
+
+}

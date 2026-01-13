@@ -1,0 +1,26 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px);
+
+    /* Propiedad para poder alinear nuestros elementos  */
+    /* Este alineado de elementos, nos va a permiti alinear nuestros elementos dentro de la celda como tal que nosotros estamos definiendo */
+    justify-items: center; /*eje de las x*/
+    align-items: center; /*eje de las y*/
+
+}
+
+.dos{
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+
+/* CONCLUCION: 
+
+    CON CSS GRID: VAMOS A PODER A PODER DEFINIR NUESTRA REGILLAS Y COLUMNAS 
+    CON FLEXBOX: VAMOS ACOMODAR LOS ELEMENTOS Y ESPACIADOS DE UNA MEJOR FORMA
+
+
+*/
+    

@@ -1,0 +1,12 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 100px);
+
+
+ /* Este alineado de elementos, nos va a permiti alinear nuestros elementos dentro del contenedor como tal que nosotros estamos definiendo */
+    justify-content: center;
+
+    height: 90vh;
+    align-content: space-between ;
+}

@@ -1,0 +1,16 @@
+.contenedor-principal{
+    max-width: none;
+}
+
+.grid{
+    display: grid;
+    padding: 20px;
+    gap: 20px;
+
+    /*AUTO-FIT: AGREGA EL ESPACIO SOBRANTE DEL CONTENEDOR A LAS COLUMNAS EN PARTES IGUALES (RELLENA EL ESPACIO/ NO DEJA ESPACIO)*/
+    /*AUTO-FIL: AGREGA NUEVAS COLUMNAS EN CASO DE QUE EL CONTENEDOR TENGA ESPACIOS*/
+
+    /* grid-template-columns: repeat(4, minmax(200px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+/*A pesar de tener 4 columnas distribuidas, cuando se reduce el contenedor, muchas veces las columnas se desbordan del contenedor, para eso estan las propiedades de AUTO FILL Y AUTOFIT y decir: si un elemento ya no cabe' ponlo en la parte de abajo....*/
+}

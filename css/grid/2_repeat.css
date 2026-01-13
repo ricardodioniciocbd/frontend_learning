@@ -1,0 +1,9 @@
+.grid{
+    /*Funcion repeat()*/
+    display: grid;
+    /* grid-template-columns: repeat(6, 1fr); */
+    /* grid-template-rows: repeat(3, 1fr); */
+
+    /* Tambien se puede utilizar la funcion repeat de la siguiete manera: */
+    grid-template-columns: auto repeat(4, 1fr) 200px;
+}

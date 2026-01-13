@@ -1,0 +1,17 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px);
+
+    /* PROPIEDAD ROWS */
+    /* Para poder darle el tamanio a nuestra grid inplicita podemos hacer lo siguiete: 
+        Quiero que las filas nuevas tengan este tamanio::** */
+    /* grid-auto-rows: 300px; */
+
+
+    /* PROPIEDAD COLUMS */
+    /* Esta propiedad lo lleva por defecto usando rows, pero para cambiar el orden en la que se muestra la numeracion de las columnas usamos  colum */
+    /* grid-auto-flow: column; */
+    /* grid-auto-columns: 200px; Propiedad para cambiarle el tamanio a nuestra nueva columna */
+   
+}

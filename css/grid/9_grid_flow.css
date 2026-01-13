@@ -1,0 +1,17 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding: 20px;
+    gap: 20px;  /*Hasta aqui los elementos van de izquierda a derecha, pero podemos cambiar este orden de 123*/
+
+    grid-auto-flow: row dense; /*La propiedad de row dense es que si detecta espacios vacios, va intentar rellenar con otros elementos3*/
+}
+
+.span-2{
+    grid-column: span 2;
+}
+
+.span-3{
+    grid-column: span 3;
+}

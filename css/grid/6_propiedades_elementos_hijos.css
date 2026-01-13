@@ -1,0 +1,58 @@
+.grid{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 20PX;
+    padding: 20px;  
+    
+    .especial{
+        background: #1ea94f;
+        color: azure;
+
+                    /* PROPIEDADES GRID-COLUM / GRID-ROW */
+
+        /* Propiedad para indicar donde queremos que comience nuestro elemento */
+        /* grid-column-start: span 2; */
+
+        /* grid-column-start: 1; */
+        /* grid-column-end: 3; */
+
+        /* De los dos anteriores, tambien podemos simplificarlo de la siguiete manera:  */
+        /* grid-column: 2 / 4; Comiensa en la 2 y termina en la 4 */
+
+
+
+
+        /* grid-row-start: 1; */
+        /* grid-row-end: -1; */
+
+        /* grid-row: 1 / -1 ; */
+
+    }
+
+                         /* CAMBIAR ORDEN DE LOS ELEMENTOS */
+     .uno {
+        order: 6;
+    }
+
+    .dos {
+        order: 4;
+    }
+
+    .tres {
+        order: 2;
+    }
+
+    .cuatro {
+        order: 1;
+
+    }
+        
+    .cinco{
+        order: 3;
+    }
+
+    .seis {
+        order: 5;
+    }
+}
