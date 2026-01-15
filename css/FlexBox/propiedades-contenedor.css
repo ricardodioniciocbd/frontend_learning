@@ -32,12 +32,14 @@ body{
     
    
     /*flex-direction: row; Acomoda las cajas en una sola linea*/
-    /*flex-direction: column; Acomoda las cajas en una sola columna*/
+    flex-direction: row; /*Acomoda las cajas en una sola columna*/
 
-    /*flex-wrap: wrap; Permite que las cajas se envuelvan en la siguiente linea*/
+    flex-wrap: wrap;/* Permite que las cajas se envuelvan en la siguiente linea*/
     /* flex-flow: row wrap;*/
 
 
+    height: 90vh;
+    justify-content: space-around;
 
     /*
         justify-content
@@ -72,8 +74,8 @@ body{
         Nos va a permitir cambiar el alineado de los elementos dentro del contenedor cuando hay mas de una linea, por ejemplo cuando tengamos felx wrap
     */
     
-    align-content: start;
-    flex-wrap: wrap;
+    /* align-content: start; */
+    /* flex-wrap: wrap; */
 
   
     

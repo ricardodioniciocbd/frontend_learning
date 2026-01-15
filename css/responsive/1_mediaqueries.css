@@ -1,0 +1,79 @@
+
+
+body{
+    background: #f2f2f2;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.grid{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    h3{
+        font-size: 32px;
+    }
+
+    img{
+        width: 100%;
+    }
+}
+
+
+/*Los mediaqueries son una estrucutura que nosotros podemos crear en CSS*/
+@media print{ /*Modifica la vista de la impresion*/
+    .grid{
+        grid-template-columns: 1fr;
+
+        img{
+            height: 200px;
+            width: auto;
+            filter: grayscale(100%);
+        }
+        a{
+            display: none;
+        }
+    }
+
+    
+
+}
+
+
+/*Mediaquerie para que se adapte a dispositivos*/
+
+@media screen and (max-width:1000px) { /*Queremos que si la pantalla es menor a 1000px, entonces que acceda al body...*/
+    body{
+        background: #111111;
+        color: #fff;
+    }
+
+    a{
+        color: red;
+    }
+
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:500px) {
+    body{
+        background: #221222;
+        color: aqua;
+        font-weight: 500px;
+
+        a{
+            color: red;
+        }
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    
+}
