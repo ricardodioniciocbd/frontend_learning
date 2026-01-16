@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f2f2f2;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+/*Primera forma*/
+/*
+.contenedor{
+    background: #ccc; 
+    width: 90%;
+    max-width: 500px;
+    margin: 40px 0;
+
+    .card{ Todo esto es nuestro componente
+        background: #fff;
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        overflow: hidden; Para que la imagen se desborde, colocamos esta propiedad dentro de la card
+
+        img{
+            width: 100%;
+            max-height: 250px; recorta el alto y tiene el ancho del 100%
+            object-fit: cover; Propiedad para que se estire la imagen y si hay partes que salgan del contenedor simplemente que queden fuera.
+        }
+
+        .textos{
+            padding: 20px;
+
+            h3{
+                font-size: 50px;
+                margin-bottom:10px ;
+            }
+
+            p{
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+
+            a{
+                background: #000;
+                color: #fff;
+                text-decoration: none;
+                display: inline-block; Para poder trabajar con el padding
+                padding: 10px 30px;
+                font-size: 20px;
+                border-radius: 5px;
+                
+
+            }
+
+            @media screen and (max-width: 500px) { Si la pantalla es menor a 500px, entonces, hacemos mas pequeño el apartado de textos
+                &{
+                    padding: 10px;
+
+                    h3{
+                        font-size: 20px;
+                        margin-bottom: 5px;
+                    }
+                    p{
+                        font-size: 14px;
+                        margin-bottom: 10px;
+                    }
+                    a{
+                        font-size: 12px;
+                        padding: 5px 15px;
+                        
+                    }
+                    
+                }
+            }
+
+        }
+        
+    }
+    
+}
+*/
+
+
+
+
+
+/*Segunda forma*/
+
+.contenedor{
+    background: #ccc; 
+    width: 90%;
+    max-width: 500px;
+    margin: 40px 0;
+
+    .card{ 
+        background: #fff;
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        overflow: hidden; 
+        font-size: 16px;
+
+
+        img{
+            width: 100%;
+            max-height: 15.62em; 
+            object-fit: cover; 
+        }
+
+        .textos{
+            padding: 1.25em; /*20px*/
+
+            h3{
+                font-size: 1.875em; /*30px*/
+                margin-bottom:0.625em ;/*10px*/
+            }
+
+            p{
+                font-size: 1.25em; /*20 px*/
+                margin-bottom: 1.25em; /*20px*/
+            }
+
+            a{
+                background: #000;
+                color: #fff;
+                text-decoration: none;
+                display: inline-block; 
+                padding: 0.625em 1.875em; /*10px 30px*/
+                font-size: 1.25em; /*20px*/
+                border-radius: 0.3125em; /*5px*/
+                
+
+            }
+
+        }
+
+        @media screen and (max-width: 500px) { 
+            &{
+                font-size: 12px; /* Cambia el font-size de .card, esto escalará todo el componente incluyendo la imagen */
+            }
+        }
+        
+    }
+    
+}

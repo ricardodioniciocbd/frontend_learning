@@ -1,0 +1,36 @@
+body{
+    background: #f2f2f2;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.grid{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+
+    h3{
+        font-size: 32px;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    /*PROPIEDAD MEDIA QUERIES - MOBILE FIRST: significa que primero se aplica el estilo para dispositivos moviles y luego se van aplicando los estilos para dispositivos mayores*/
+    
+
+    @media screen and (min-width: 500px) { /*Si la pantalla es mayor a 500px, entonces...*/
+        &{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media screen and (min-width: 1000px) {
+        &{
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
