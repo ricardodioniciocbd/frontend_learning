@@ -1,0 +1,23 @@
+/* Estilos globales */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    background: #e6ecf8;
+
+}
+
+a{
+    text-decoration: none;
+    color: var(--azul-primario);
+    &:hover{
+        text-decoration:underline;
+    }
+
+}
