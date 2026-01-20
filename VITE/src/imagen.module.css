@@ -1,0 +1,16 @@
+.imagen{
+    padding: 10px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover{
+        background: #fff;
+    }
+}
+
+.contador{
+    color:limegreen;
+    font-size: 25 px;
+    font-weight: bold;
+}
