@@ -42,7 +42,7 @@ header{
             position: absolute;/*position hijo (absolute) para poder posicionar el triangulo*/
             border-top: 70px solid transparent;
             border-right:70px solid transparent;
-            border-bottom: 7 0px solid var(--azul-secundario) ;
+            border-bottom: 90px solid var(--azul-secundario) ;
             right: -70px;
             top: -70px;
 
@@ -50,6 +50,30 @@ header{
 
     }
 
+    .navbar{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        a{
+            display: inline-flex;
+            gap: 10px;
+            align-items: center;
+            font-weight: 700;
+            border-radius: 5px;
+
+            &.boton{
+                font-weight: 500;
+            }
+    
+        }
+    }
+
+    
+
+  
 
 
 
