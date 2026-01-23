@@ -86,4 +86,62 @@
 
     }
 
+    .col-2 {
+        position: relative;
+        .slideshow { /*CONTENEDOR PRINCIPAL DE las imagenes e indicadores*/
+
+            /* background: #000; */
+            position: absolute; /*Para sacar la imagen del contenedor, usando absolute.. pero al contenedor padre le debemos  colocar en relative*/
+            width: 100%;
+            border-radius:10px;
+            overflow: hidden; /*PROPIEDAD QUE PERMITE OCULTAR TODO LO QUE ESTE FUERA, Y PERMITE METER LAS IMAGENES DENTRO DEL CONTENEDOR Y DARLES BORDER-RADIUS*/
+            top: -20px;
+
+            .slides {  /*CONTENEDOR DE LAS IMAGENES*/
+                display: flex; /*flex para poner las imagenes en fila (una a lado de la otra)*/
+                flex-wrap: nowrap; /*asegura que las imagenes no se pongan hacia abajo.. siempre uno a lado de la otra...*/
+
+                .slide { /*Accedemos a las imagenes*/
+                    min-width: 100%; /*que tenga un ancho minimo del CONTENEDOR de nuestro SLIDES*/
+
+                    img {
+                        width: 100%; /*ahora que la imagen ocupe el 100% del contendedor */
+                        height: 100%;
+                        object-fit: cover; /*para que la imagen se adapte un poco mejor */
+                        vertical-align: top; /*Elimina margenes que las IMAGENES tiene por defecto*/
+                    }
+
+                }
+            }
+
+            .indicadores {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                position: absolute; /*Metemos los indicadores dentro del Contenedor Padre*/
+                bottom: 20px;
+                left: 0;
+
+                .indicador {
+                    width: 25px;
+                    height: 2px;
+                    border: none; /*quita el borde de boton*/
+                    background: rgba(255, 255, 255, 0.3);
+                    border-radius: 10px;
+                    transition: 0.3s ease all;
+
+                    &.active { /*De los indicadores que tengan la clase .active quiero que tengan una background de...*/
+                        background: rgba(255, 255, 255, 1);
+                    }
+                }
+                
+
+
+            }
+        }
+
+        
+    }
+
 }
