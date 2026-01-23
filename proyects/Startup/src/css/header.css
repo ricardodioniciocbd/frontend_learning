@@ -43,8 +43,8 @@ header{
             border-top: 70px solid transparent;
             border-right:70px solid transparent;
             border-bottom: 90px solid var(--azul-secundario) ;
-            right: -70px;
-            top: -70px;
+            right: -69.99px;
+            top: -69.99px;
 
         }
 
