@@ -53,3 +53,16 @@ a{
     
 }
 
+.contenedor {
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.titulo-caracteristicas {
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    color: var(--azul-secundario);
+    margin-bottom: 40px;
+}

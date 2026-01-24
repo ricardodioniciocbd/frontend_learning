@@ -1,0 +1,86 @@
+.caracteristicas {
+    margin-top: 140px;
+    margin-bottom: 100px;
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        
+
+        .previews {
+            /* background: red; */
+            border-radius: 5px;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            .thumb {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                vertical-align: top;
+                transition: 0.5s ease all;
+                position: absolute; /*para que la imagen se pueda mover dentro del contenedor*/
+                top: 0;
+                left: 0;
+                opacity: 0;
+
+                &.active {
+                    opacity: 1;
+                }
+            }
+
+           
+            
+        }
+
+        .tabs {
+            display: grid;/*para poder usar el gap*/
+            grid-template-columns: 1fr;
+            gap: 10px;
+            border-radius: 5px;
+
+            .tab {
+                background: #fff;
+                border-radius: 5px;
+                overflow: hidden;
+                display: grid; /*Decimos que queremos trabajar con 2 columnas, para trabajar con ICONO - INFORMACION*/
+                grid-template-columns: auto 1fr;
+                cursor: pointer;
+
+                &.active {
+                    background: var(--azul-primario);
+                    color: #fff;
+                    .icono {
+                        color: #fff;
+                    }
+                }
+
+                .icono {
+                    display: flex;
+                    align-items: center;
+                    padding-left: 20px;
+                    color: var(--azul-primario);
+
+                    svg {
+                        width: 30px;
+                        height: 30px;
+                    }  
+                }
+
+                .info {
+                    padding: 20px;
+                    display: flex; /*Para dar espacio entre titulo y parrafo*/
+                    flex-direction: column;
+                    gap: 10px;
+                }
+
+            }
+            
+
+        }
+        
+    }
+}
