@@ -12,5 +12,9 @@ colores[0] = 'rojo';
 colores[1] = 'azul';
 colores[2] = "morado";
 colores[3] = 'amarillo';
-colores[3] = 'rosa'
-console.log(colores);
+colores[4] = 'rosa'
+console.log('El arreglo tiene: ', colores.length, 'colores los cuales son:', colores  );
+
+// FUNCION PUSH: sirve para  agregar mas colores al final de nuestro arreglo
+colores.push('WHITE');
+console.log('El arreglo tiene: ', colores.length, 'colores los cuales son:', colores  );
