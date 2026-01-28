@@ -1,0 +1,77 @@
+.precios {
+    margin-bottom: 100px;
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+
+        .plan {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+
+            /* Espaciado entre los texto con FLEXBOX  */
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            border: 1px solid transparent;
+            transition: .3s ease all;
+
+            &.destacado {
+                background: var(--azul-secundario);
+                color: #fff;
+
+                .precio span {
+                    color: #fff;
+                }
+            }
+
+            &:hover {
+                border: 1px solid var(--azul-primario);
+            }
+
+            .nombre {
+                font-size: 32px;
+                font-weight: 700;
+            }
+
+            .precio {
+                font-size: 32px;
+                font-weight: 700;
+
+                span {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: rgba(0, 0, 0, 0.5);
+
+                }
+                
+            }
+
+            .descripcion {
+                line-height: 150%;
+            }
+
+            .lista {
+                list-style: none; /* quita las viñetas que trae por defecto */
+                display: flex; /*Para usar el gap, usamos el flex*/
+                flex-direction: column;
+                gap: 10px; 
+
+                li {
+                    display: flex; 
+                    align-items: center;
+                    gap: 10px; /* Espacio entre el icono y la lista */
+
+                    .icono {
+                        display: flex;
+                        align-items: center;
+                        color: var(--azul-primario);
+                    }
+                }
+            }
+        }
+
+        
+    }
+}

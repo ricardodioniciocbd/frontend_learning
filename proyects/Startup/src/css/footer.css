@@ -1,0 +1,33 @@
+.footer {
+    background: var(--azul-secundario);
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 40px;
+    /* Como el footer es el contenedor del NAV y los LINKS, queremos que este uno a la izquierda y otro a la derecha. */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        img {
+            width: 20vw;
+            max-width: 100px;
+        }
+    }
+    
+
+    .links {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        a {
+            color: #fff;
+        }
+        
+    }
+}
