@@ -7,10 +7,18 @@
     margin: 0;
 }
 
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     font-family: "Nunito Sans", sans-serif;
     background: #e6ecf8;
-
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 a{
@@ -58,6 +66,15 @@ a{
     max-width: 1200px;
     margin: auto;
 }
+
+/* @media screen and (max-width: 900px){
+    .contenedor{
+        width: 100% !important;
+        max-width: none !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+} */
 
 .titulo-caracteristicas {
     font-size: 40px;
