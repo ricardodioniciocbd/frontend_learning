@@ -177,4 +177,69 @@
 
     }
 
+
+    /*media querie para el disenio responsive para nuestro hero*/
+    @media screen and (max-width: 768px) {
+        & {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border-radius: 0;
+
+            .col-1 {
+                order: 2;
+                text-align: center;
+                gap: 20px;
+
+                .titulo {
+                    text-align: center;
+                    font-size: 30px;
+                }
+
+                .botones {
+                    display: flex;
+                    justify-content: center;
+                    
+                }
+
+                .estadisticas {
+                    flex-direction: column;
+                    gap: 20px;
+                    justify-content: center;
+                    font-size: 18px;
+
+                    /*quitar la linea vertical*/
+                    p {
+                        gap: 10px;
+
+                        &:nth-child(1) { /*queremos acceder al primer parrafo que se encuetra dentro de estadisticas*/
+                            padding-right: 0;
+                            border-right: none;
+
+                        }
+                    }
+
+                }
+
+            }
+
+            .col-2 {
+                order: 1;
+                display: flex;
+                justify-content: center;
+
+                .slideshow {
+                    position: relative; /*para que ya no quede afuera (before) la imagen.. sino que este dento del hero*/
+                    width: 70%; /*Tamanio del slidershow*/
+                }
+            }
+        }
+        
+    }
+
 }
+
+
+
+
+
