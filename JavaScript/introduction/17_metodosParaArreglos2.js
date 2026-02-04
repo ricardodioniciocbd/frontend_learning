@@ -82,5 +82,58 @@ const nombre4Letas = nombres.filter( (nombre) => {
         return nombre;
     }
 });
-
 console.log(`El nombre con 4 letras es: ${nombre4Letas.join(', ')}`);
+
+
+
+
+
+
+/* 
+        .includes()
+        Nos permite saber si el arreglo contiene un elemento especificado 
+        Nos arroja true o false
+*/
+console.log(nombres.includes('Sara')); // true
+console.log(nombres.includes('Ryan')); // false
+
+
+
+/*
+        .every()
+            Nos permite ejecutar un codicional sobre cada elemento y 
+            nos devuelve true si todos los elementos cumpliero la condicion 
+
+            // Por cada elemento ejeuctas una funcion 
+            // Every nos va permitir devolver verdadero o falso si todos los elementos son de tipo string
+            en caso de que exista algun otro valor que no sea str, nos retorna FALSE.
+*/
+
+const esString = nombres.every((nombre) => {
+    if (typeof nombre === 'string'){
+        return true
+    } else {
+        return false
+    }
+});
+
+console.log(`Los nombres son strigs? ${esString}`);
+
+
+
+/*
+        .some()
+            Nos permite ejecutar un condicional sobre cada elemento y 
+            nos devuelve TRUE SI ALGUN elemento cumplio la condicion.
+*/
+const esStringsome = nombres.some((nombre) => {
+    if (typeof nombre !== 'string'){
+        return true
+    } else {
+        return false
+    }
+});
+
+console.log(`El arreglo es valido? ${esStringsome}`);
+// true - si hay un valor invalido
+// false - si no hay un valor invalido
