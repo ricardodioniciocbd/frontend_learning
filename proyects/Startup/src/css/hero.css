@@ -94,7 +94,7 @@
             position: absolute; /*Para sacar la imagen del contenedor, usando absolute.. pero al contenedor padre le debemos  colocar en relative*/
             width: 100%;
             border-radius:10px;
-            overflow: hidden; /*PROPIEDAD QUE PERMITE OCULTAR TODO LO QUE ESTE FUERA, Y PERMITE METER LAS IMAGENES DENTRO DEL CONTENEDOR Y DARLES BORDER-RADIUS*/
+            overflow: hidden; /* PROPIEDAD QUE PERMITE OCULTAR TODO LO QUE ESTE FUERA, Y PERMITE METER LAS IMAGENES DENTRO DEL CONTENEDOR Y DARLES BORDER-RADIUS */
             top: -20px;
 
             .slides {  /*CONTENEDOR DE LAS IMAGENES*/
@@ -120,14 +120,14 @@
                 justify-content: center;
                 gap: 10px;
                 position: absolute; /*Metemos los indicadores dentro del Contenedor Padre*/
-                bottom: 20px;
+                bottom: 10px;
                 left: 0;
 
                 .indicador {
                     width: 25px;
-                    height: 2px;
+                    height: 5px;
                     border: none; /*quita el borde de boton*/
-                    background: rgba(255, 255, 255, 0.3);
+                    background: #000;
                     border-radius: 10px;
                     transition: 0.3s ease all;
 
