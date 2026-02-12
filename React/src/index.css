@@ -37,7 +37,7 @@ body {
 .login {
 	background: var(--card-background);
 	padding: 20px;
-	text-align: center;
+	/* text-align: center; */
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
