@@ -1,0 +1,38 @@
+.dark-mode{
+    background: var(--shade-2);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 100px;
+    overflow: hidden;
+    cursor: pointer;
+
+    input {
+         display: none; /* Ocultamos el borde vizual del input checkbox */
+    }
+
+    .icono {
+        padding: 7px 12px;
+        display: flex; 
+        align-items: center;/*Alineamos los iconos al centro de forma vertical */
+        justify-content: center; 
+        border-radius: 100px;
+        color: var(--shade-7);
+
+        &.active{
+            background: #072537;
+            border: 3px solid var(--shade-2);
+        }
+
+        &.sol.active svg{/*El sol va a ser amarillo SOLO cuando tenga la clase active*/
+            color: #dbff00;
+
+        }
+
+        &.luna.active svg {
+            color: #fff;
+        }
+
+
+    }
+}
