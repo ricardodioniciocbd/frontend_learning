@@ -13,7 +13,8 @@ const Hero = () => {
                         Estudiante de Ingeniería en Sisistemas Computacionales <br />y Desarrollador Web
                     </p>
 
-                    <a href="#trabajos" className="boton transparente">
+                    <div className='botones'>
+                        <a href="#trabajos" className="boton transparente">
                         Ver trabajos
                         <div className="icono">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -32,8 +33,16 @@ const Hero = () => {
                             </svg>
                         </div>
                     </a>
+                    </div>
 
                 </div>
+
+                {/* <div className='video-container'>
+                    <video src="./assets/background.mp4" loop autoPlay className='video' type='video/mp4'></video>
+
+                </div> */}
+
+
 
             </section>
         
