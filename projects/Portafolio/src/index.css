@@ -21,6 +21,7 @@
     --shade-9: #0D0D0D;
     --shade-10: #000000;
     --primario: #D83A3A;
+    --primario-hover: #bf3030;
 }
 
 body{
@@ -51,4 +52,69 @@ a{
     width: 95%;
     max-width: 1200px;
     margin: auto;
+}
+
+.boton {
+    background: var(--primario);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+    overflow: hidden;
+    font-weight: 500;
+    padding: 14px 20px;
+    display: flex; /*Para alinear el texto a izq y los iconos a derecha y alinearlos de forma vertical*/
+    gap: 10px;
+    align-items: center;
+    transition: .3s ease all;
+    text-decoration: none;
+    &:hover{
+        background: var(--primario-hover);
+        text-decoration: none;
+
+    }
+    .dark &{
+        color: #fff;
+
+    }
+    
+}
+
+.clientes, 
+.trabajos {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+
+    .encabezado {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        align-items: center;
+
+        .titulo {
+            font-family: 'Merriweather',serif;
+            color: var(--shade-8);
+            font-size: 22px;
+            font-weight: 800;
+
+            .dark &{
+                color: var(--shade-2);
+            }
+        }
+
+        .subtitulo {
+            font-size: 16px;
+            color: var(--shade-6);
+
+            .dark & {
+                color: var(--shade-4);
+            }
+
+
+        }
+    }
 }
