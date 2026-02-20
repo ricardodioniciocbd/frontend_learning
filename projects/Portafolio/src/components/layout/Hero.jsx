@@ -1,5 +1,11 @@
+import { useState } from 'react'; // Importamos el hook useState para manejar el estado del componente
 import './Hero.css';
+
 const Hero = () => {
+    // Declaramos una variable de estado 'videoLoaded' iniciada en false.
+    // Esto nos servirá para saber si el video ya terminó de cargar sus datos iniciales.
+    const [videoLoaded, setVideoLoaded] = useState(false);
+
     return (
         <>
             <section className="hero">
@@ -37,10 +43,28 @@ const Hero = () => {
 
                 </div>
 
-                {/* <div className='video-container'>
-                    <video src="./assets/background.mp4" loop autoPlay className='video' type='video/mp4'></video>
+                {/* 
+                   Contenedor del video.
+                   Usamos una plantilla literal para agregar la clase 'loaded' dinámicamente.
+                   Si videoLoaded es true, la clase final será "video-container loaded".
+                   Si es false, será solo "video-container".
 
-                </div> */}
+                   // Si videoLoaded es false, la clase es solo "video-container" (invisible en CSS).
+// Si                 videoLoaded es true, la clase es "video-container loaded" (visible en CSS).
+                */}
+                <div className={`video-container ${videoLoaded ? 'loaded' : ''}`}>
+                    <video 
+                        src="https://www.pexels.com/download/video/5495784/" 
+                        loop 
+                        autoPlay 
+                        muted 
+                        className='video'
+                        // Evento que se dispara cuando el navegador ha cargado suficientes datos para reproducir el video.
+                        // Al dispararse, actualizamos nuestro estado a true.
+                        onLoadedData={() => setVideoLoaded(true)}
+                    ></video>
+
+                </div>
 
 
 

@@ -29,7 +29,7 @@
         }
 
         @media screen and (max-width: 992px) {
-            &{
+            & {
                 gap: 10px;
             }
             
@@ -67,6 +67,35 @@
                 gap: 10px;
                 justify-content: space-between;
                 align-items: center;
+
+                .nombre {
+                    display: inline-block;
+                    color: var(--shade-9);
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                }
+
+                .categoria {
+                    font-size: 14px;
+                    color: var(--shade-6);
+                }
+
+                .btn-ir {
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    width: 30px;
+                    height: 30px;
+
+                    svg {
+                        width: 100%;
+                        color: var(--primario);
+                        transition: 0.3 ease all;
+                    }
+                }
             }
         }
     }
