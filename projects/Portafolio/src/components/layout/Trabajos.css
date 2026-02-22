@@ -15,6 +15,13 @@
             cursor: pointer;
             border: 1px solid var(--shade-3);
             color: var(--shade-6);
+
+            .dark &{
+                color: var(--shade-4);
+                border: 1px solid var(--shade-7);
+
+
+            }
         }
 
         input[type='radio'] {
@@ -41,12 +48,28 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 40px 20px;
 
+        @media screen and (max-width:768px) {
+            & {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+        }
+         @media screen and (max-width:568px) {
+            & {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+        }
+
+
+
         .trabajo {
             .thumb {
                 width: 100%;
                 display: inline-block;
                 border-radius: 5px;
                 overflow: hidden;
+                margin-bottom: 10px;
                 img {
                     width: 100%;
                     vertical-align: top ;
@@ -74,6 +97,10 @@
                     font-size: 16px;
                     font-weight: 600;
                     margin-bottom: 5px;
+
+                    .dark & {
+                        color: var(--shade-3);
+                    }
                 }
 
                 .categoria {
