@@ -2,12 +2,14 @@ import './Trabajos.css';
 import { useState } from 'react';
 
 import trabajos from '../data/trabajos';
+import Modal from '../Modal';
 
 const Trabajos = () => {
 
     //Crear un estado para GUARDAR LA CATEGORIA SELECCIONADA
     const [categoriaSeleccionada, setCategoriaSeleccionada] = useState('todos');
     const [trabajosFiltrados, setTrabajosFiltrados] = useState(trabajos);
+    const [estadoModal, setEstadoModal] = useState
     
     const handleChange = (e) => { // funcion para obtener el evento del radioB. al cual se le dio CLIC
         const categoria = e.target.id; // de esta manera obtenemos la categoria la cual queremos filtrar.
@@ -24,11 +26,6 @@ const Trabajos = () => {
                 });
                 setTrabajosFiltrados(nuevosTrabajos);
          }
-        
-
-    
-
-
     }
 
     return (
@@ -39,7 +36,6 @@ const Trabajos = () => {
                     <h3 className="titulo">Mis trabajos</h3>
                     <p className="subtitulo">Estos son mis trabajos como freelace.</p>
                 </div>
-                {/* <p>{categoriaSeleccionada}</p> */}
                 <div className="filtros">
                     <label htmlFor="todos">                {/* El label encierra el input para poder darle clic al texto y seleccionar el radiobtton */}
                         <input type="radio" name="categoria" id="todos" onChange={handleChange} checked={categoriaSeleccionada === 'todos' }/>
@@ -89,8 +85,11 @@ const Trabajos = () => {
              
                 </div>
 
-
             </section>
+            <Modal/>
+
+
+
         </>
     );
 }
