@@ -9,7 +9,8 @@ const Trabajos = () => {
     //Crear un estado para GUARDAR LA CATEGORIA SELECCIONADA
     const [categoriaSeleccionada, setCategoriaSeleccionada] = useState('todos');
     const [trabajosFiltrados, setTrabajosFiltrados] = useState(trabajos);
-    const [estadoModal, setEstadoModal] = useState
+    const [estadoModal, setEstadoModal] = useState(false);
+    const [trabajoSeleccionado, setTrabajoSeleccionado] = useState(trabajos[0]);
     
     const handleChange = (e) => { // funcion para obtener el evento del radioB. al cual se le dio CLIC
         const categoria = e.target.id; // de esta manera obtenemos la categoria la cual queremos filtrar.
@@ -26,7 +27,28 @@ const Trabajos = () => {
                 });
                 setTrabajosFiltrados(nuevosTrabajos);
          }
+    };
+
+    const openModal = (e, id) => { 
+        e.preventDefault();
+        setEstadoModal(true)
+
+        const trabajo = trabajos.find( (trabajo) => { // funcion para encontrar el trabajo abierto y compararlo y que nos devuleva un objeto
+            if (trabajo.id === id){
+                return true;
+            }
+        });
+
+        setTrabajoSeleccionado(trabajo);
+
+    };
+
+    const closeModal = () => {
+        setEstadoModal(false)
     }
+
+
+
 
     return (
         <>
@@ -63,15 +85,15 @@ const Trabajos = () => {
                     { trabajosFiltrados.map( (trabajo, index) => {
                         return (
                             <div className="trabajo" key={index}>
-                                <a href="#" className="thumb">
+                                <a href="#" className="thumb" onClick={(e) => openModal(e, trabajo.id)}>
                                     <img loading="lazy" src={trabajo.thumb.url} alt={trabajo.thumb.alt} />
                                 </a>
                                 <div className="info">
                                     <div className="textos">
-                                        <a href="#" className="nombre">{trabajo.info.nombre}</a>
+                                        <a href="#" className="nombre" onClick={(e) => openModal(e, trabajo.id)}>{trabajo.info.nombre}</a>
                                         <p className="categoria">{trabajo.info.categoria}</p>
                                     </div>
-                                    <a href="#" className="btn-ir">
+                                    <a href="#" className="btn-ir" onClick={(e) => openModal(e, trabajo.id)}>
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
                                             <path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z"/>
                                         </svg>
@@ -86,7 +108,8 @@ const Trabajos = () => {
                 </div>
 
             </section>
-            <Modal/>
+           
+            {estadoModal && <Modal closeModal={closeModal} trabajo={trabajoSeleccionado}/>}
 
 
 
