@@ -1,0 +1,120 @@
+.acerca-de {
+    display: flex;
+    justify-content: center;
+
+    .grid {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1.7fr 2fr;
+        gap: clamp(20px, 3vw, 40px);
+
+
+        .col-1 {
+            .fotos {
+                display: flex;
+                justify-content: flex-end;
+                position: sticky;
+                top: 20px;
+                .foto {
+                    padding: 6px;
+                    border: 1px solid var(--shade-2);
+                    border-radius: 5px;
+
+                    .dark &{
+                        border-radius: 5px;
+                        border: 1px solid var(--shade-8);
+                    }
+                    &:nth-child(1) {
+                        width: 80%;
+                    }
+                    &:nth-child(2) {
+                        width: 40%;
+                        position: absolute;
+                        left: 0;
+                        bottom: -15%;
+                    }
+                }
+            }
+        }
+
+        .col-2 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: start;
+
+            .pre-titulo{
+                color: var(--primario);
+                font-size: 16px;
+                font-weight: 600px;
+            }
+
+            .titulo{
+                font-size: 30px;
+            }
+
+            .p-1 {
+                .resumen {
+                    color: var(--shade-7);
+                    line-height: 32px;
+                    
+    
+                      
+                    .dark & {
+                        color: var(--shade-4);
+                    }
+      
+                }
+                .resumen-2 {
+                    color: var(--shade-7);
+                    line-height: 32px;
+                    margin-top: 20px;
+
+                    .dark & {
+                        color: var(--shade-4);
+                    }
+
+                }
+            }
+            
+        }
+    }
+
+
+    @media screen and (max-width: 576px) {
+        & {
+            .grid{
+                grid-template-columns: 1fr;
+
+                .col-1 {
+                    .fotos {
+                        margin-bottom: 60px;
+                        justify-content: center;
+
+                        .foto {
+                            &:nth-child(1) {
+                                width: 60%;
+                            }
+                            &:nth-child(2) {
+                                width: 40%;
+                                left: 55%;
+                                bottom: -20%;
+                            }
+                        }
+                    }
+                }
+
+                .col-2 {
+                    align-items: center;
+                    .titulo {
+                        text-align: center;
+                        /* text-align: center; */
+                    }
+
+
+                }
+            }
+        }
+        
+    }
+}
