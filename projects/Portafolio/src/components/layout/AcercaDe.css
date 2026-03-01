@@ -1,6 +1,7 @@
 .acerca-de {
     display: flex;
     justify-content: center;
+    padding-top: 30px;
 
     .grid {
         width: 80%;
