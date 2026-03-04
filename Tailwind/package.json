@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "tailwindcss": "^4.2.1"
+  },
+
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./public/estilos.css --watch",
+    "tailwind": "tailwindcss -i ./src/input.css -o ./public/estilos.css --watch"
+  }
+}
