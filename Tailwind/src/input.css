@@ -4,4 +4,14 @@
     --font-sans: "roboto", serif;
     --font-sefit: "Merriweather", serif;
     --font-titulo: "Oswald", sans-serif;
+
+    /* VARIABLES */
+    --color-primario: #62a87c;
+    --color-secundario: #7ee081;
+
+
+    /* //VARIABLES */
+    --color-detalles-100: #8447ff;
+    --color-detalles-200: #4b00e0;
+    
 }
